@@ -6,9 +6,13 @@ dict_rus_to_eng = {
 }
 
 def from_eng_to_rus(eng):
-    rus = dict_rus_to_eng[eng]
+    rus = dict_eng_to_rus[eng]
+    return rus
+
+from_eng_to_rus("apple")
+
+def from_rus_to_eng(rus):
+    eng = dict_eng_to_rus[rus]
     return eng
 
-def from_eng_to_rus(eng):
-    rus = dict_rus_to_eng[eng]
-    return eng
+from_rus_to_eng("яблоко")
