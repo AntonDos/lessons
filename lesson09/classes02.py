@@ -10,7 +10,6 @@ class Dog:
         self.name = name
         self.age = age
 
-
     def jump(self):
         print(f"{self.name} is jumping")
 
